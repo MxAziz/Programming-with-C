@@ -16,6 +16,13 @@ int main() {
     p2 = &b;
     p3 = &c;
 
+    // Comparing the values using pointers
+    if (*p1 >= *p2 && *p1 >= *p3)
+        printf("Biggest = %d\n", *p1);
+    else if (*p2 >= *p1 && *p2 >= *p3)
+        printf("Biggest = %d\n", *p2);
+    else
+        printf("Biggest = %d\n", *p3);
 
     return 0;
 }
